@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-inknut">
+    <header
+      class="w-full h-[100px] bg-navy flex items-center justify-between px-10 text-white relative shadow-lg"
+    >
+      <div class="text-white font-bold text-xl">PT JYN GROUP INDONESIA</div>
+      <nav
+        class="flex bg-navy gap-4 md:flex-row flex-col md:w-auto max-sm:w-full max-sm:-bottom-36 max-sm:left-0 max-sm:absolute max-sm:-translate-x-full max-sm:transition-all max-sm:duration-500 max-sm:ease-in-out max-sm:py-4 max-sm:px-10"
+        id="menu"
+      >
+        <a href="/">Home</a>
+        <a href="/">Product</a>
+        <a href="/">Gallery</a>
+        <a href="/">Contact us</a>
+      </nav>
+      <button
+        class="md:hidden flex flex-col gap-1.5 border border-sky-100 py-2 px-3 rounded-md"
+        onclick="toggleMenu()"
+      >
+        <span class="w-5 h-0.5 bg-white block"></span>
+        <span class="w-5 h-0.5 bg-white block"></span>
+        <span class="w-5 h-0.5 bg-white block"></span>
+      </button>
+    </header>
+
+    <main>
+      <section
+        class="w-full h-screen bg-navy flex items-center justify-between"
+      >
+        <div
+          class="w-[40%] h-full flex flex-col items-center justify-center text-white px-10 gap-8"
+        >
+          <img src="./images/logo-jyn.png" alt="logo" class="w-[500px]" />
+          <div class="ps-3 flex flex-col gap-4 text-xl">
+            <p>
+              We are offering to the world the unique experience of the most
+              immaculate forest coffee and other distinguished qualities of
+              Indonesian specialty coffee.
+            </p>
+            <p>
+              Dedicated to delivering the highest quality of Indonesian Forest
+              and other specialty coffee to the world with fairness, and
+              professionalism.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex justify-end overflow-hidden h-[90%] w-[60] gap-4 pr-10"
+        >
+          <div class="flex flex-col gap-4">
+            <img src="./images/Pabrik.png" alt="Pabrik" />
+            <img src="./images/alat-giling.png" alt="alat giling" />
+            <img src="./images/jemur-kopi.png" alt="penjemuran kopi" />
+          </div>
+          <img src="./images/view-pabrik.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <script src="./jyn-doffe.js"></script>
+  </body>
+</html>
