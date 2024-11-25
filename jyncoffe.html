@@ -1,77 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <!-- google font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="font-inknut">
-    <header
-      class="w-full h-[100px] bg-navy flex items-center justify-between px-10 text-white relative shadow-lg"
-    >
-      <div class="text-white font-bold text-xl">PT JYN GROUP INDONESIA</div>
-      <nav
-        class="flex bg-navy gap-4 md:flex-row flex-col md:w-auto max-sm:w-full max-sm:-bottom-36 max-sm:left-0 max-sm:absolute max-sm:-translate-x-full max-sm:transition-all max-sm:duration-500 max-sm:ease-in-out max-sm:py-4 max-sm:px-10"
-        id="menu"
-      >
-        <a href="/">Home</a>
-        <a href="/">Product</a>
-        <a href="/">Gallery</a>
-        <a href="/">Contact us</a>
-      </nav>
-      <button
-        class="md:hidden flex flex-col gap-1.5 border border-sky-100 py-2 px-3 rounded-md"
-        onclick="toggleMenu()"
-      >
-        <span class="w-5 h-0.5 bg-white block"></span>
-        <span class="w-5 h-0.5 bg-white block"></span>
-        <span class="w-5 h-0.5 bg-white block"></span>
-      </button>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
 
-    <main>
-      <section
-        class="w-full h-screen bg-navy flex items-center justify-between"
-      >
-        <div
-          class="w-[40%] h-full flex flex-col items-center justify-center text-white px-10 gap-8"
-        >
-          <img src="./images/logo-jyn.png" alt="logo" class="w-[500px]" />
-          <div class="ps-3 flex flex-col gap-4 text-xl">
-            <p>
-              We are offering to the world the unique experience of the most
-              immaculate forest coffee and other distinguished qualities of
-              Indonesian specialty coffee.
-            </p>
-            <p>
-              Dedicated to delivering the highest quality of Indonesian Forest
-              and other specialty coffee to the world with fairness, and
-              professionalism.
-            </p>
+<body class="font-inknut">
+  <header
+    class="w-full h-[100px] md:bg-navy bg-navy backdrop-blur md:sticky top-0 flex items-center justify-between px-10 text-white max-sm:relative shadow-lg z-10">
+    <div class="text-white font-bold text-xl">PT JYN GROUP INDONESIA</div>
+    <nav
+      class="flex max-sm:bg-navy gap-4 md:flex-row flex-col md:w-auto max-sm:w-full max-sm:-bottom-[175px] max-sm:left-0 max-sm:absolute max-sm:-translate-x-full max-sm:transition-all max-sm:duration-500 max-sm:ease-in-out max-sm:py-4 max-sm:px-10 max-sm:z-100"
+      id="menu">
+      <a href="/">Home</a>
+      <a href="/">Product</a>
+      <a href="/">Gallery</a>
+      <a href="/">Contact us</a>
+    </nav>
+    <button class="md:hidden flex flex-col gap-1.5 border border-sky-100 py-2 px-3 rounded-md" onclick="toggleMenu()">
+      <span class="w-5 h-0.5 bg-white block"></span>
+      <span class="w-5 h-0.5 bg-white block"></span>
+      <span class="w-5 h-0.5 bg-white block"></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="w-full h-full bg-navy flex items-center justify-between max-sm:flex-col py-4">
+      <div class="w-[40%] max-sm:w-full h-full flex flex-col items-center justify-center text-white px-10 gap-8">
+        <img src="./images/logo-jyn.png" alt="logo" class="w-[500px]" />
+        <img src="./images/jemur-kopi.png" alt="penjemuran kopi" class="md:hidden w-full" />
+
+        <div class="ps-3 flex flex-col gap-4 text-3xl max-sm:text-sm max-sm:w-full">
+          <p>
+            We are offering to the world the unique experience of the most
+            immaculate forest coffee and other distinguished qualities of
+            Indonesian specialty coffee.
+          </p>
+          <p>
+            Dedicated to delivering the highest quality of Indonesian Forest
+            and other specialty coffee to the world with fairness, and
+            professionalism.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex md:ustify-end h-max md:w-[60] gap-4 md:pr-10  max-sm:justify-center max-sm:items-center max-sm:w-full">
+        <div class="flex flex-col gap-10">
+          <img src="./images/Pabrik.png" alt="Pabrik" class="h-full max-sm:hidden" />
+          <img src="./images/alat-giling.png" alt="alat giling" class="h-full max-sm:hidden" />
+          <img src="./images/jemur-kopi.png" alt="penjemuran kopi" class="h-full max-sm:hidden" />
+        </div>
+        <img src="./images/view-pabrik.png" alt="Pabrik" class="max-sm:hidden" />
+      </div>
+    </section>
+
+    <section class="h-screen bg-navy flex flex-col">
+      <div class=" text-white text-center flex justify-center items-center h-[30%]">
+        <h1 class="text-5xl">OUR COMMITMENT TO THE FOREST</h1>
+      </div>
+
+      <div class="w-full flex justify-between items-center max-sm:flex-col bg-gold h-[40%] text-center text-xl px-10">
+        <div class="flex flex-col justify-center items-center gap-4 p-4">
+          <div class="h-[189px] w-[189px] border-8 border-black flex justify-center items-center rounded-full">
+            <img src="./images/community 1.png" alt="icon-comunity">
+          </div>
+          <p>Sustainability</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-4 p-4">
+          <div class="h-[189px] w-[189px] border-8 border-black flex justify-center items-center rounded-full">
+            <img src="./images/regenerative 1.png" alt="icon-Regenartive">
+          </div>
+          <p>Regenerative &
+            Syntropic Agriculture</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-4 p-4">
+          <div class="h-[189px] w-[189px] border-8 border-black flex justify-center items-center rounded-full">
+            <img src="./images/trade 1.png" alt="icon-comunity" />
+          </div>
+          <p>Sustainability</p>
+        </div>
+      </div>
+
+      <div class="w-full h-[30%] relative overflow-hidden">
+        <img src="./images/buah-kopi.png" alt=" gambar-1" class="w-full h-full object-cover" />
+        <div class="absolute top-0 left-0 w-full h-full bg-black/50 "></div>
+      </div>
+    </section>
+
+    <section class="w-full h-screen bg-no-repeat bg-center bg-cover relative"
+      style="background-image: url('./images/bg-jyn.png');">
+      <div class="absolute bg-black/50 top-0 h-full w-full">
+        <div class="w-full h-[20%] text-center text-3xl text-white flex flex-col justify-center items-center">
+          <h1>Arabica</h1>
+          <h1>ORIGIN - BAJAWA, FLORES</h1>
+        </div>
+        <div class="w-full h-[80%] px-10 flex justify-between items-center text-lg">
+          <div class="flex flex-col justify-center items-center gap-4 text-center">
+            <img src="./images/coffe.png" alt="coffe">
+            <div class="flex flex-col gap-4 text-white">
+              <h1 class="font-bold">Varieties</h1>
+              <p>Typica, Line S</p>
+              <h2 class="font-bold">Altitude</h2>
+              <p>1200 - 1500 Masl</p>
+              <h3 class="font-bold">Taste note</h3>
+              <p>Sweet, Blackberries, Sour,</p>
+              <p>Tropical Fruits, Cocoa</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-4 text-center">
+            <img src="./images/coffe.png" alt="coffe">
+            <div class="flex flex-col gap-4 text-white">
+              <h1 class="font-bold">Varieties</h1>
+              <p>Typica, Line S</p>
+              <h2 class="font-bold">Altitude</h2>
+              <p>1200 - 1500 Masl</p>
+              <h3 class="font-bold">Taste note</h3>
+              <p>Spicy, Vanilla, Herby,</p>
+              <p>Sour, Roasted</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-4 text-center">
+            <img src="./images/coffe.png" alt="coffe">
+            <div class="flex flex-col gap-4 text-white">
+              <h1 class="font-bold">Varieties</h1>
+              <p>Typica, Line S</p>
+              <h2 class="font-bold">Altitude</h2>
+              <p>1200 - 1500 Masl</p>
+              <h3 class="font-bold">Taste note</h3>
+              <p>Nutty, Cocoa, Sweet,</p>
+              <p>Brown Sugar, Silky</p>
+            </div>
           </div>
         </div>
-        <div
-          class="flex justify-end overflow-hidden h-[90%] w-[60] gap-4 pr-10"
-        >
-          <div class="flex flex-col gap-4">
-            <img src="./images/Pabrik.png" alt="Pabrik" />
-            <img src="./images/alat-giling.png" alt="alat giling" />
-            <img src="./images/jemur-kopi.png" alt="penjemuran kopi" />
-          </div>
-          <img src="./images/view-pabrik.png" alt="" />
+      </div>
+    </section>
+
+    <section class="w-full h-screen bg-no-repeat bg-center bg-cover relative"
+      style="background-image: url('./images/bg-jyn.png');">
+      <div class="absolute bg-black/50 top-0 h-full w-full">
+        <div class="w-full h-[20%] text-center text-3xl text-white flex flex-col justify-center items-center gap-3">
+          <h1>Arabica</h1>
+          <h1>ORIGIN - GAYO LUES, ACEH</h1>
         </div>
-      </section>
-    </main>
-    <script src="./jyn-doffe.js"></script>
-  </body>
+        <div class="w-full h-[80%] px-20 flex justify-between items-center text-lg">
+          <div class="flex flex-col justify-center items-center gap-4 text-center">
+            <img src="./images/coffe.png" alt="coffe">
+            <div class="flex flex-col gap-4 text-white">
+              <h1 class="font-bold">Varieties</h1>
+              <p>Typica, Line S</p>
+              <h2 class="font-bold">Altitude</h2>
+              <p>1200 - 1500 Masl</p>
+              <h3 class="font-bold">Taste note</h3>
+              <p>Sweet, Blackberries, Sour,</p>
+              <p>Tropical Fruits, Cocoa</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-4 text-center">
+            <img src="./images/coffe.png" alt="coffe">
+            <div class="flex flex-col gap-4 text-white">
+              <h1 class="font-bold">Varieties</h1>
+              <p>Typica, Line S</p>
+              <h2 class="font-bold">Altitude</h2>
+              <p>1200 - 1500 Masl</p>
+              <h3 class="font-bold">Taste note</h3>
+              <p>Spicy, Vanilla, Herby,</p>
+              <p>Sour, Roasted</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-4 text-center">
+            <img src="./images/coffe.png" alt="coffe">
+            <div class="flex flex-col gap-4 text-white">
+              <h1 class="font-bold">Varieties</h1>
+              <p>Typica, Line S</p>
+              <h2 class="font-bold">Altitude</h2>
+              <p>1200 - 1500 Masl</p>
+              <h3 class="font-bold">Taste note</h3>
+              <p>Nutty, Cocoa, Sweet,</p>
+              <p>Brown Sugar, Silky</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full h-screen bg-navy grid grid-cols-3">
+      <img src="" alt="">
+    </section>
+  </main>
+
+  <script src="./jyn-coffe.js"></script>
+</body>
+
 </html>
